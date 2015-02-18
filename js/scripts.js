@@ -15,7 +15,9 @@ $(document).ready(function(){
     shipment.weight = parseFloat($("input#weight").val());
     shipment.distance = parseFloat($("input#weight").val());
 
+    $("#rate").text(shipment.rate());
 
+    event.preventDefault();
   });
 
 });
