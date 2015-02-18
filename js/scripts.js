@@ -13,7 +13,7 @@ $(document).ready(function(){
   $('form#shipment').submit(function(event){
 
     shipment.weight = parseFloat($("input#weight").val());
-    shipment.distance = parseFloat($("input#weight").val());
+    shipment.distance = parseFloat($("input#distance").val());
 
     $("#rate").text(shipment.rate());
 
